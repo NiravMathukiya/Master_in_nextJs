@@ -1,0 +1,65 @@
+Next.js (React Freamwork)
+
+-> full stack framwork which is Work with React and backend in one app . 
+
+fectures ::-
+
+1. routing 
+2. data compling
+3. data fectching
+4. server side rendering
+
+--> all thisng are optimazed and provided by next.js internally
+
+RSC == (React Server Components)
+
+
+react server component is new way to createing and rendering a react-component on server side.
+
+Two types ::- 
+    1. client component
+    2. server component
+
+
+Next.js support FileSystem Based Routing System ::--
+
+--> the url of browser is how to organize files and folder in your code 
+--> layout.tsx are file that can craete automatically when that is app run if that deleted
+
+--> all the route and file name always in Lowercase
+--> uppercase file name is prevent
+
+1) static Routes ::-
+
+app/about --> create a about folder and inside that page.tsx for create a that route
+app/about/first --> create that folder and inside that page.tsx for create a that route and again same for inside pages . 
+
+2) daynamic routes ::-
+
+app/product --> craete a simpal product folder and craete onr filr inside that is page.tsx for that route
+app/product/[id] --> create a product folder and create a [ProductId] and inside that page.tsx for that and we can also easy to navigate that site easily
+
+3) nested daynamic route ::-
+
+app/product/[productId]/review --> create a product folder and create a [productId] folder and inside that create a review folder and inside that page.tsx for that route
+
+4) catch all routes ::-
+
+app/product/[...all] --> create a product folder and create a [...all] folder and inside that page.tsx for that route and we can also access all the route from that page by using useRouter() hook
+
+5) catch-all segment Route
+
+app/doc/fecture1/concept1 --> craete that for fecture like 20 and concept like 20 and we can also access all the route from that page by using catch-all segment Route
+
+app/doc/[...slug]  --> that is a simaple slug configuration in app nin that all the under nested route are cated and shoe deoc page.tsx
+
+6) custom error Page
+
+craete not-found.tsx page at app for all and any folder inside fro that particulre website route
+--> also callled function notFound(); from next/navigation from call not found page Manually
+
+usePathname() ==> hook that can give us url as string with "/".
+
+7) private folder routing
+
+if we cam place _(underscore) before ay folder name that can make privat and not include in routing untill that have page.tsx file inside that folder.
