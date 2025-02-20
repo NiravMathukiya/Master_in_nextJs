@@ -29,6 +29,9 @@ Next.js support FileSystem Based Routing System ::--
 --> all the route and file name always in Lowercase
 --> uppercase file name is prevent
 
+
+/// routing in next.js ///
+
 1) static Routes ::-
 
 app/about --> create a about folder and inside that page.tsx for create a that route
@@ -63,3 +66,26 @@ usePathname() ==> hook that can give us url as string with "/".
 7) private folder routing
 
 if we cam place _(underscore) before ay folder name that can make privat and not include in routing untill that have page.tsx file inside that folder.
+
+
+8) route Groups
+
+--> share layout between route with out interaction 
+
+(auth) --> trate as a group of that under folder (that is no need to in write of url)
+
+/// layout in next.js  ///
+
+1) root layout :-
+
+it is common layout for all sites and  make sure that is best and fixed layout which is consistain in all pages
+
+2) nested rot layout :-
+
+--> it is a layout for all nested route and we can also use that layout for all nested route
+--> we can also use that layout for all nested route
+
+
+/// meta data ///
+
+sso optimazation
